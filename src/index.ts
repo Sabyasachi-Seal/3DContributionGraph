@@ -41,54 +41,54 @@ export const main = async (): Promise<void> => {
                 ? template.HalloweenSettings
                 : template.NormalSettings;
 
-            f.writeFile(
-                'profile-green-animate.svg',
-                create.createSvg(userInfo, settings, true)
-            );
-            f.writeFile(
-                'profile-green.svg',
-                create.createSvg(userInfo, settings, false)
-            );
+            // f.writeFile(
+            //     'profile-green-animate.svg',
+            //     create.createSvg(userInfo, settings, true)
+            // );
+            // f.writeFile(
+            //     'profile-green.svg',
+            //     create.createSvg(userInfo, settings, false)
+            // );
 
-            // Northern hemisphere
-            f.writeFile(
-                'profile-season-animate.svg',
-                create.createSvg(userInfo, template.NorthSeasonSettings, true)
-            );
-            f.writeFile(
-                'profile-season.svg',
-                create.createSvg(userInfo, template.NorthSeasonSettings, false)
-            );
+            // // Northern hemisphere
+            // f.writeFile(
+            //     'profile-season-animate.svg',
+            //     create.createSvg(userInfo, template.NorthSeasonSettings, true)
+            // );
+            // f.writeFile(
+            //     'profile-season.svg',
+            //     create.createSvg(userInfo, template.NorthSeasonSettings, false)
+            // );
 
-            // Southern hemisphere
-            f.writeFile(
-                'profile-south-season-animate.svg',
-                create.createSvg(userInfo, template.SouthSeasonSettings, true)
-            );
-            f.writeFile(
-                'profile-south-season.svg',
-                create.createSvg(userInfo, template.SouthSeasonSettings, false)
-            );
+            // // Southern hemisphere
+            // f.writeFile(
+            //     'profile-south-season-animate.svg',
+            //     create.createSvg(userInfo, template.SouthSeasonSettings, true)
+            // );
+            // f.writeFile(
+            //     'profile-south-season.svg',
+            //     create.createSvg(userInfo, template.SouthSeasonSettings, false)
+            // );
 
-            f.writeFile(
-                'profile-night-view.svg',
-                create.createSvg(userInfo, template.NightViewSettings, true)
-            );
+            // f.writeFile(
+            //     'profile-night-view.svg',
+            //     create.createSvg(userInfo, template.NightViewSettings, true)
+            // );
 
-            f.writeFile(
-                'profile-night-green.svg',
-                create.createSvg(userInfo, template.NightGreenSettings, true)
-            );
+            // f.writeFile(
+            //     'profile-night-green.svg',
+            //     create.createSvg(userInfo, template.NightGreenSettings, true)
+            // );
 
             f.writeFile(
                 'profile-night-rainbow.svg',
                 create.createSvg(userInfo, template.NightRainbowSettings, true)
             );
 
-            f.writeFile(
-                'profile-gitblock.svg',
-                create.createSvg(userInfo, template.GitBlockSettings, true)
-            );
+            // f.writeFile(
+            //     'profile-gitblock.svg',
+            //     create.createSvg(userInfo, template.GitBlockSettings, true)
+            // );
         }
     } catch (error) {
         console.error(error);
